@@ -2,7 +2,7 @@
   "main": {
     "name":"Vinay Valson",
     "job":"Web Developer",
-    "description":"I have made this Webpage in order to display my skills. You can go through this webpage assuming its a my Resume. Scroll down to see the technologies I have worked with",
+    "description":"I'm a self-taught full stack web & mobile developer who is always learning new things. You can find me here",
     "image":"profilepic.jpg",
     "bio":"Demonstrating adaptability is as intrinsic as being technically sound. I am seeking an opportunity where I can productively utilize my technical, communication and presentation skills. I am fond of learning new stuff, embracing change and socialising with creative folks.",
     "contactmessage":"If you feel I would fit well in your organization please do drop a message through the given form",
@@ -166,39 +166,35 @@
     ],
     "techStack":[
       {
-        "image":"",
+        "image":"J2EE.jpg",
         "title":"J2EE Development on Eclipse with Oracle WebLogic Server and JPA"
       },
       {
-        "image":"",
+        "image":"postman.jpg",
         "title":"API testing using Postman"
       },
       {
-        "image":"",
+        "image":"apachecordova.jpg",
         "title":"Apache CORDOVA"
       },
       {
-        "image":"",
+        "image":"node.jpg",
         "title":"NodeJS App Development on VSCode"
       },
       {
-        "image":"",
-        "title":"App Development for Electron"
-      },
-      {
-        "image":"",
+        "image":"mern.jpg",
         "title":"MERN Stack"
       },
       {
-        "image":"",
+        "image":"dcoekr.jpg",
         "title":"Deployment using Docker on Google Cloud Platform"
       },
       {
-        "image":"",
+        "image":"jupyter.jpg",
         "title":"ML on Jupyter Notebook"
       },
       {
-        "image":"",
+        "image":"unity.jpg",
         "title":"Unity Game Engine"
       }
   ]
