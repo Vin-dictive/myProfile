@@ -1,0 +1,9 @@
+.scrollbar {
+    overflow-x: hidden;
+    overflow-y: overflow;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
