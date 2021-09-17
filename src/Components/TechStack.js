@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Zmage from "react-zmage";
+import React, { Component } from 'react'
 import Fade from "react-reveal";
+import Zmage from "react-zmage";
 
 let id = 0;
 class TechStack extends Component {
@@ -8,15 +8,19 @@ class TechStack extends Component {
     if (!this.props.data) return null;
 
     const techStack = this.props.data.techStack.map(function (techStack) {
-      let techStackImage = "images/portfolio/" + techStack.image;
+      let techStackImage = "images/techStack/" + techStack.image;
 
       return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap container">
-            <Zmage alt={techStack.title} src={techStackImage} width={500} height={500}/>
-            <a href={techStack.url}> {techStack.title}</a>
-            <p>{techStack.category}</p>
-            <p>{techStack.description}</p>
+        <div class="flip-card columns" key={id++}>
+          <div class="flip-card-inner item-wrap container">
+            <div class="flip-card-front">
+              <Zmage src={techStackImage} alt={techStack.title} width={300} height={300}/>
+            </div>
+            <div class="flip-card-back">
+              <a href={techStack.url}> {techStack.title}</a>
+              <p>{techStack.category}</p>
+              <p>{techStack.description}</p>
+            </div>
           </div>
         </div>
         
@@ -28,8 +32,8 @@ class TechStack extends Component {
         <Fade left duration={1000} distance="40px">
           <div>
             <div>
-              <h1>Check out some of my techStack</h1>
-                <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+              <h1>Technologies Worked with</h1>
+                <div id="techStack-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                   {techStack}
                 </div>
             </div>
