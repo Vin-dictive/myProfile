@@ -16,6 +16,7 @@
    g. Testimonials Section
    h. Contact Section
    i. Footer
+   j. ThreeTest Styles
 
 ===================================================================== */
 
@@ -733,6 +734,9 @@ ul#nav li.current a { color: #0762f9; }
    color: white;
    text-align:center;
    align-items: center;
+   font: 22px/27px 'opensans-light', sans-serif;
+   margin: auto;
+   vertical-align: middle;
  }
 
  /* Style the front side (fallback if image is missing) */
@@ -1307,4 +1311,13 @@ footer .social-links li:first-child { margin-left: 0; }
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
    color: #2B2B2B;
+}
+
+/* ------------------------------------------------------------------ */
+/* j. ThreeTest Styles
+/* ------------------------------------------------------------------ */
+
+.threeTest-panel{
+   height: 500px;
+   width: 100%;
 }
