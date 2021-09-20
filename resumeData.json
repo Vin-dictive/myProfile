@@ -122,13 +122,6 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Profile Page",
-        "category":"ReactJS",
-        "description":"My profile page made using ReactJS and THREE.JS",
-        "image":"myProfile.jpg",
-        "url":"https://github.com/Vin-dictive/myProfile"
-      },
-      {
         "title":"ARgorithm",
         "category":"Final Year BE Project",
         "description":"ARgorithm is an open source technology designed for creating visualisations of data structures and algorithms in augmented reality. ",
@@ -169,6 +162,13 @@
         "description":"Stepping stones to Web Development",
         "image":"Patatap Clone.jpg",
         "url":"https://vin-dictive.github.io/Patatap_Clone/"
+      },
+      {
+        "title":"Profile Page",
+        "category":"",
+        "description":"My profile page made using ReactJS and THREE.JS",
+        "image":"myProfile.jpg",
+        "url":"https://github.com/Vin-dictive/myProfile"
       }
     ],
     "techStack":[
