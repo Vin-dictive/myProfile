@@ -5,7 +5,7 @@
     "description":"I'm a self-taught full stack web & mobile developer who is always learning new things. You can find me here",
     "image":"profilepic.jpg",
     "bio":"Demonstrating adaptability is as intrinsic as being technically sound. I am seeking an opportunity where I can productively utilize my technical, communication and presentation skills. I am fond of learning new stuff, embracing change and socialising with creative folks.",
-    "contactmessage":"If you feel I would fit well in your organization please do drop a message through the given form",
+    "contactmessage":"Contact me if you appreciate my work",
     "email": "vinay.valson@gmail.com",
     "phone": "+91 9656197498",
     "github":"https://github.com/Vin-dictive",
@@ -122,6 +122,13 @@
   "portfolio":{
     "projects": [
       {
+        "title":"Profile Page",
+        "category":"ReactJS",
+        "description":"My profile page made using ReactJS and THREE.JS",
+        "image":"myProfile.jpg",
+        "url":"https://github.com/Vin-dictive/myProfile"
+      },
+      {
         "title":"ARgorithm",
         "category":"Final Year BE Project",
         "description":"ARgorithm is an open source technology designed for creating visualisations of data structures and algorithms in augmented reality. ",
@@ -191,7 +198,7 @@
       },
       {
         "image":"jupyter.jpg",
-        "title":"ML on Jupyter Notebook"
+        "title":"Machine Learning on Jupyter Notebook"
       },
       {
         "image":"unity.jpg",
