@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Fade from "react-reveal";
-import Zmage from "react-zmage";
 
 let id = 0;
 class TechStack extends Component {
@@ -14,12 +13,10 @@ class TechStack extends Component {
         <div class="flip-card columns" key={id++}>
           <div class="flip-card-inner item-wrap container">
             <div class="flip-card-front">
-              <Zmage src={techStackImage} alt={techStack.title} width={300} height={300}/>
+              <img src={techStackImage} alt={techStack.title} />
             </div>
             <div class="flip-card-back">
               <a href={techStack.url}> {techStack.title}</a>
-              <p>{techStack.category}</p>
-              <p>{techStack.description}</p>
             </div>
           </div>
         </div>
