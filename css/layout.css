@@ -24,13 +24,13 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #000000; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 .particles-bg-canvas-self{
-   background: #000 !important;
+   background: rgb(0, 0, 0) !important;
  }
 
 header {
@@ -724,6 +724,7 @@ ul#nav li.current a { color: #0762f9; }
  
  /* Position the front and back side */
  .flip-card-front, .flip-card-back {
+   flex: auto;
    border-radius: 10px ;
    position: absolute;
    -webkit-backface-visibility: hidden; /* Safari */
@@ -732,7 +733,9 @@ ul#nav li.current a { color: #0762f9; }
    height: 100%;
  }
 
- .flip-card-back a{
+ .flip-card-back h3{
+   text-align: center;
+   margin-top: 37.5%;
    color: white;
    font: 22px/27px 'opensans-light', sans-serif;
  }
