@@ -1,5 +1,5 @@
 {
-  "homepage": "https://vin-dictive.github.io/myProfile/",
+  "homepage": "/",
   "name": "vindictiveresume",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +20,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-ga": "^3.3.0",
+    "react-loader-spinner": "^4.0.0",
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
     "react-zmage": "^0.8.5-beta.36",

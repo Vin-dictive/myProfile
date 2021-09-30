@@ -16,7 +16,7 @@ class TechStack extends Component {
               <img src={techStackImage} alt={techStack.title} />
             </div>
             <div class="flip-card-back">
-              <a href={techStack.url}> {techStack.title}</a>
+              <h3 href={techStack.url}> {techStack.title}</h3>
             </div>
           </div>
         </div>

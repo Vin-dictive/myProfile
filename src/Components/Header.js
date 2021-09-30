@@ -12,11 +12,20 @@ class Header extends Component {
     const job = this.props.data.job;
     const description = this.props.data.description;
     const resumeDownload = this.props.data.resumedownload;
+    var types = ["color",
+    "lines",
+    "thick",
+    "circle",
+    "polygon",
+    "square",
+    "fountain"];
+
+    var randType = types[Math.floor(Math.random() * types.length)];
 
     return (
       <header id="home">
-        <ParticlesBg type="random" bg={true} />
-
+        <ParticlesBg type={randType} bg={true} />
+ 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation

@@ -2,7 +2,7 @@
   "main": {
     "name":"Vinay Valson",
     "job":"Web Developer",
-    "description":"I'm a self-taught full stack web & mobile developer who is always learning new things. You can find me here",
+    "description":"I'm a full stack web & mobile developer who is always learning new thing. If you want me to create amazing pages like this one, You can find me here",
     "image":"profilepic.jpg",
     "bio":"Demonstrating adaptability is as intrinsic as being technically sound. I am seeking an opportunity where I can productively utilize my technical, communication and presentation skills. I am fond of learning new stuff, embracing change and socialising with creative folks.",
     "contactmessage":"Contact me if you appreciate my work",
@@ -122,13 +122,6 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Profile Page",
-        "category":"ReactJS",
-        "description":"My profile page made using ReactJS and THREE.JS",
-        "image":"myProfile.jpg",
-        "url":"https://github.com/Vin-dictive/myProfile"
-      },
-      {
         "title":"ARgorithm",
         "category":"Final Year BE Project",
         "description":"ARgorithm is an open source technology designed for creating visualisations of data structures and algorithms in augmented reality. ",
@@ -169,6 +162,13 @@
         "description":"Stepping stones to Web Development",
         "image":"Patatap Clone.jpg",
         "url":"https://vin-dictive.github.io/Patatap_Clone/"
+      },
+      {
+        "title":"Profile Page",
+        "category":"",
+        "description":"My profile page made using ReactJS and THREE.JS",
+        "image":"myProfile.jpg",
+        "url":"https://github.com/Vin-dictive/myProfile"
       }
     ],
     "techStack":[
