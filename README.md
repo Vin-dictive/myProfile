@@ -1,9 +1,8 @@
 
 ## View this page using this link https://vin-dictive.github.io/myProfile/
 
-In case you are getting localhost:3000 on running npm start 
-
-Make the following change:- 
+## In case you are getting localhost:3000 on running npm start:-
+### Make the following change:- 
 
 In package.json replace 
 ```
@@ -18,7 +17,7 @@ then try
 npm start
 ```
 
-To deploy as GitHub pages:- 
+## To deploy as GitHub pages:-
 In package.json replace 
 ```
 "homepage": "/"
