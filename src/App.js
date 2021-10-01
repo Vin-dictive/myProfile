@@ -8,8 +8,10 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
-import TechStack from "./Components/TechStack.js"
+import TechStack from "./Components/TechStack";
 import ThreeTest from "./Components/ThreeTest";
+import Loader from "./Components/Loader";
+import { Fade } from "react-reveal";
 
 class App extends Component {
   constructor(props) {
@@ -40,11 +42,19 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
+    setTimeout(function() {this.setState({render: true})}.bind(this), 3000) //Wait for Page to Load
   }
 
   render() {
+    if(!this.state.render){
+      return(
+        <Loader/>
+      )
+    }
     return (
+      <Fade duration={1000}>
       <div className="App">
+        <Fade duration={1000}>
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
         <Resume data={this.state.resumeData.resume} />
@@ -53,7 +63,9 @@ class App extends Component {
         <Portfolio data={this.state.resumeData.portfolio} />
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
+        </Fade>
       </div>
+      </Fade>
     );
   }
 }
