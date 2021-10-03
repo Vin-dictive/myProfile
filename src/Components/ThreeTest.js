@@ -46,7 +46,7 @@ class ThreeTest extends Component {
             <ambientLight />
             <directionalLight position={[150, 150, 150]} intensity={0.55} />
             <Boxes />
-            <OrbitControls enablePan={false} autoRotate />
+            <OrbitControls enablePan={false} autoRotate minDistance={0.1} maxDistance={100}/>
         </Canvas>
       </section>
     );

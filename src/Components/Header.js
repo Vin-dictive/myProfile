@@ -12,13 +12,7 @@ class Header extends Component {
     const job = this.props.data.job;
     const description = this.props.data.description;
     const resumeDownload = this.props.data.resumedownload;
-    var types = ["color",
-    "lines",
-    "thick",
-    "circle",
-    "polygon",
-    "square",
-    "fountain"];
+    var types = ["color", "lines", "thick", "circle", "polygon", "square", "fountain"];
 
     var randType = types[Math.floor(Math.random() * types.length)];
 

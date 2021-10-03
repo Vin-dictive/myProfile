@@ -10,11 +10,14 @@ import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
 import TechStack from "./Components/TechStack";
 import ThreeTest from "./Components/ThreeTest";
+import Loader from "react-loader-spinner";
+import { Fade } from "react-reveal";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: true,
       foo: "bar",
       resumeData: {}
     };
@@ -30,6 +33,7 @@ class App extends Component {
       cache: false,
       success: function(data) {
         this.setState({ resumeData: data });
+        this.setState({ loading: false });
       }.bind(this),
       error: function(xhr, status, err) {
         console.log(err);
@@ -40,22 +44,37 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
-    setTimeout(function() {this.setState({render: true})}.bind(this), 3000) //Wait for Page to Load
   }
 
   render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        <TechStack data={this.state.resumeData.portfolio} />
-        <ThreeTest data={this.state.resumeData.portfolio}/>
-        <Portfolio data={this.state.resumeData.portfolio} />
-        <Contact data={this.state.resumeData.main} />
-        <Footer data={this.state.resumeData.main} />
-      </div>
-    );
+    if(this.state.loading){
+      return(
+        <div className="loadingToCenter">
+          <Loader
+            type="Rings"
+            color="#00BFFF"
+            height={100}
+            width={100}
+          />
+        </div>
+        )
+    }
+    else {
+      return (
+        <Fade duration={1000} >
+        <div className="App">
+          <Header data={this.state.resumeData.main} />
+          <About data={this.state.resumeData.main} />
+          <Resume data={this.state.resumeData.resume} />
+          <TechStack data={this.state.resumeData.portfolio} />
+          <ThreeTest data={this.state.resumeData.portfolio}/>
+          <Portfolio data={this.state.resumeData.portfolio} />
+          <Contact data={this.state.resumeData.main} />
+          <Footer data={this.state.resumeData.main} />
+        </div>
+        </Fade>
+      );
+    }
   }
 }
 
