@@ -90,32 +90,31 @@
     ],
     "skills":[
       {
-        "name":"JAVA",
-        "level":"60%"
+        "name":"JAVA"
       },
       {
-        "name":"JavaScript",
-        "level":"50%"
+        "name":"JavaScript"
       },
       {
-        "name":"Python",
-        "level":"50%"
+        "name":"Python"
       },
       {
-        "name":"C#",
-        "level":"45%"
+        "name":"SQL"
       },
       {
-        "name":"SQL",
-        "level":"60%"
+        "name":"MongoDB"
       },
       {
-        "name":"No-SQL",
-        "level":"65%"
+        "name":"ReactJS"
       },
       {
-        "name":"ReactJs",
-        "level":"30%"
+        "name":"SCSS"
+      },
+      {
+        "name":"HTML"
+      },
+      {
+        "name":"OJET"
       }
     ]
   },
@@ -194,7 +193,7 @@
       },
       {
         "image":"dcoekr.jpg",
-        "title":"Deployment using Docker on Google Cloud Platform"
+        "title":"Deployment using Docker"
       },
       {
         "image":"jupyter.jpg",
