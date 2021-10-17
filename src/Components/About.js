@@ -18,8 +18,8 @@ class About extends Component {
     return (
       <section id="about">
         <Fade duration={1000}>
-          <div className="row">
-            <div className="three columns">
+          <div className="row work">
+            <div className="three columns header-col">
               <img
                 className="profile-pic"
                 src={profilepic}

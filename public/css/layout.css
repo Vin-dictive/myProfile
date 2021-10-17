@@ -214,8 +214,8 @@ ul#nav li.current a { color: #0762f9; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 220px;
+   height: 220px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -242,12 +242,27 @@ ul#nav li.current a { color: #0762f9; }
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#resume {
-   background: #fff;
+#resume{
+   /* background-image: linear-gradient(135deg, #e7627d 0%, #b8235a 25%, #801357 50%, #3d1635 75%, #1c1a27 100%);    */
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 #resume a, #resume a:visited  { color: #0762f9; }
 #resume a:hover, #resume a:focus { color: #313131; }
@@ -275,7 +290,7 @@ ul#nav li.current a { color: #0762f9; }
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
+   color: #ffffff;
    margin-bottom: 18px;
    margin-top: 9px;
 }
@@ -1100,6 +1115,7 @@ call-to-action .button {
    font-size: 15px;
    line-height: 24px;
    width: 65%;
+   resize: none;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -1288,12 +1304,31 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 
 .github-btn:hover{
-   background-color: #34495e !important;
+   background-color: #e7e7e7 !important;
    border-radius: 10px ;
    padding: 16px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
    color: #2B2B2B;
+}
+
+.skills-btn{
+   margin: 10px;
+   background-color: #f3f3f3 !important;
+   border-radius: 10px ;
+   padding: 16px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   color: #cf7575;
+}
+
+.skills-btn:hover{
+   background-color: #e73c7e!important;
+   border-radius: 10px ;
+   padding: 16px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   color: #cf7575;
 }
 
 .linked-btn{
