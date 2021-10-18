@@ -12,6 +12,7 @@ import TechStack from "./Components/TechStack";
 import ThreeTest from "./Components/ThreeTest";
 import Loader from "react-loader-spinner";
 import { Fade } from "react-reveal";
+import HexBackground from "./Components/HexBackground";
 
 class App extends Component {
   constructor(props) {
@@ -71,6 +72,7 @@ class App extends Component {
           <Portfolio data={this.state.resumeData.portfolio} />
           <Contact data={this.state.resumeData.main} />
           <Footer data={this.state.resumeData.main} />
+          <HexBackground/>
         </div>
         </Fade>
       );
