@@ -10,12 +10,12 @@ class TechStack extends Component {
       let techStackImage = "images/techStack/" + techStack.image;
 
       return (
-        <div class="flip-card columns" key={id++}>
-          <div class="flip-card-inner item-wrap container">
-            <div class="flip-card-front">
+        <div className="flip-card columns" key={id++}>
+          <div className="flip-card-inner item-wrap container">
+            <div className="flip-card-front">
               <img src={techStackImage} alt={techStack.title} />
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <h3 href={techStack.url}> {techStack.title}</h3>
             </div>
           </div>

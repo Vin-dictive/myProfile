@@ -11,7 +11,6 @@ import Portfolio from "./Components/Portfolio";
 import TechStack from "./Components/TechStack";
 import ThreeTest from "./Components/ThreeTest";
 import Loader from "react-loader-spinner";
-import { Fade } from "react-reveal";
 import HexBackground from "./Components/HexBackground";
 
 class App extends Component {
@@ -43,40 +42,40 @@ class App extends Component {
     });
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.getResumeData();
   }
 
   render() {
-    if(this.state.loading){
+    while(this.state.loading){
       return(
-        <div className="loadingToCenter">
-          <Loader
-            type="Rings"
-            color="#00BFFF"
-            height={100}
-            width={100}
-          />
+        <div>
+          <div className="loadingToCenter">
+            <Loader
+              type="Rings"
+              color="#00BFFF"
+              height={100}
+              width={100}
+            />
+          </div>
         </div>
         )
     }
-    else {
-      return (
-        <Fade duration={1000} >
-        <div className="App">
-          <Header data={this.state.resumeData.main} />
-          <About data={this.state.resumeData.main} />
-          <Resume data={this.state.resumeData.resume} />
-          <TechStack data={this.state.resumeData.portfolio} />
-          <ThreeTest data={this.state.resumeData.portfolio}/>
-          <Portfolio data={this.state.resumeData.portfolio} />
-          <Contact data={this.state.resumeData.main} />
-          <Footer data={this.state.resumeData.main} />
-          <HexBackground/>
-        </div>
-        </Fade>
-      );
-    }
+    
+    return (
+      <div className="App">
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main} />
+        <Resume data={this.state.resumeData.resume} />
+        <TechStack data={this.state.resumeData.portfolio} />
+        <ThreeTest data={this.state.resumeData.portfolio}/>
+        <Portfolio data={this.state.resumeData.portfolio} />
+        <Contact data={this.state.resumeData.main} />
+        <Footer data={this.state.resumeData.main} />
+        <HexBackground/>
+      </div>
+    );
+    
   }
 }
 

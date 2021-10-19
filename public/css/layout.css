@@ -283,6 +283,7 @@ ul#nav li.current a { color: #0762f9; }
 #resume .main-col { padding-right: 10%; }
 
 .education, .work {
+   margin-top: 60px;
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
@@ -451,7 +452,6 @@ ul#nav li.current a { color: #0762f9; }
    text-align: center;
    color: #95A3A3;
 }
-
 .pointerEventRemover{
    pointer-events: none;
 
@@ -459,6 +459,7 @@ ul#nav li.current a { color: #0762f9; }
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
+   margin-top: 50px;
    border-radius: 10px ;
    padding: 5%;
    line-height: 20px;
@@ -621,7 +622,7 @@ ul#nav li.current a { color: #0762f9; }
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   color: #95A3A3;
+   color: #ffffff;
 }
 
 /* techStack Content */

@@ -3,10 +3,6 @@ import Slide from "react-reveal";
 import HexBackground from "./HexBackground";
 
 class Resume extends Component {
-  componentDidMount(){
-    
-  }
-
   render() {
     if (!this.props.data) return null;
     const skillmessage = this.props.data.skillmessage;
@@ -40,16 +36,15 @@ class Resume extends Component {
 
     const skills = this.props.data.skills.map((skills) => {
       return (
-          <a href className="button skills-btn">
+          <a key={skills.name} href="#resume" className="button skills-btn">
             {skills.name}
           </a>
       );
     });
-
     return (
-      <section id="resume">
-         <HexBackground/>
-         <Slide left duration={1300}>
+      <section id="resume">  
+        <HexBackground/>
+        <Slide left duration={1300}>
           <div className="row work">
             <div className="three columns header-col">
               <h1>
