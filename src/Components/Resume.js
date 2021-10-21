@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
-import ComponentWithDimensions from "./ComponentWithDimensions";
+import HexGridBackground  from "./HexGridBackground";
 
 class Resume extends Component {
   
@@ -45,7 +45,7 @@ class Resume extends Component {
 
     return (
       <section id="resume">  
-        <ComponentWithDimensions/>
+        <HexGridBackground/>
         <Slide left duration={1300}>
           <div className="row work">
             <div className="three columns header-col">

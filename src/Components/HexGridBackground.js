@@ -1,6 +1,6 @@
 import React, { useRef, useLayoutEffect, useState } from "react";
 
-const ComponentWithDimensions = props => {
+const HexGridBackground = props => {
   const targetRef = useRef();
   const [dimensions, setDimensions] = useState({ width:0, height: 0 });
 
@@ -32,4 +32,4 @@ const ComponentWithDimensions = props => {
   );
 };
 
-export default ComponentWithDimensions;
+export default HexGridBackground;
