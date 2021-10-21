@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
-import HexBackground from "./HexBackground"
+import ComponentWithDimensions from './ComponentWithDimensions';
 
 let id = 0;
 class Portfolio extends Component {
@@ -25,7 +25,7 @@ class Portfolio extends Component {
 
     return (
       <section id="portfolio">
-        <HexBackground/>
+        <ComponentWithDimensions/>
         <Fade left duration={1000} distance="40px">
           <div className="pointerEventRemover">
             <h1>Check out some of my Projects</h1>

@@ -11,7 +11,7 @@ import Portfolio from "./Components/Portfolio";
 import TechStack from "./Components/TechStack";
 import ThreeTest from "./Components/ThreeTest";
 import Loader from "react-loader-spinner";
-import HexBackground from "./Components/HexBackground";
+import ComponentWithDimensions from "./Components/ComponentWithDimensions";
 
 class App extends Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class App extends Component {
     });
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.getResumeData();
   }
 
@@ -72,7 +72,7 @@ class App extends Component {
         <Portfolio data={this.state.resumeData.portfolio} />
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
-        <HexBackground/>
+        <ComponentWithDimensions/>
       </div>
     );
     

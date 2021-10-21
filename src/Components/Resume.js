@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
-import HexBackground from "./HexBackground";
+import ComponentWithDimensions from "./ComponentWithDimensions";
 
 class Resume extends Component {
+  
   render() {
     if (!this.props.data) return null;
     const skillmessage = this.props.data.skillmessage;
@@ -41,9 +42,10 @@ class Resume extends Component {
           </a>
       );
     });
+
     return (
       <section id="resume">  
-        <HexBackground/>
+        <ComponentWithDimensions/>
         <Slide left duration={1300}>
           <div className="row work">
             <div className="three columns header-col">
