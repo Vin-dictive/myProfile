@@ -1,5 +1,8 @@
 .hex-container{
     /* Create the parallax scrolling effect */
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
     position: absolute;
     animation: hex-animate 4s linear infinite;
     z-index: 0;
