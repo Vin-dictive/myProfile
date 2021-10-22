@@ -24,13 +24,6 @@ class Footer extends Component {
 
               <ul className="copyright">
                 <li>Modified by Vinay Valson</li>
-                <li>Template by Nordic Giant</li>
-                <li>
-                  Design by{" "}
-                  <a title="Styleshout" href="http://www.styleshout.com/">
-                    Styleshout
-                  </a>
-                </li>
               </ul>
             </div>
           </Fade>

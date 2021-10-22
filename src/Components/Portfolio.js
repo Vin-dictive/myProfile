@@ -13,7 +13,7 @@ class Portfolio extends Component {
       return (
         <div key={id++} className="columns portfolio-item">
           <div className="item-wrap container">
-            <img alt={projects.title} src={projectImage} width={500} height={500}/>
+            <img alt={projects.title} src={projectImage} />
             <a href={projects.url}> {projects.title}</a>
             <p>{projects.category}</p>
             <p>{projects.description}</p>
