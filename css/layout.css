@@ -453,7 +453,7 @@ ul#nav li.current a { color: #0762f9; }
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   color: #95A3A3;
+   color: #e4e4e4;
 }
 .pointerEventRemover{
    pointer-events: none;
