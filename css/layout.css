@@ -448,6 +448,12 @@ ul#nav li.current a { color: #0762f9; }
    overflow: hidden;
    position: relative;
 }
+
+#portfolio img{
+   width: 100%;
+   height: auto;
+}
+
 #portfolio h1 {
    font: 24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
@@ -1002,7 +1008,7 @@ call-to-action .button {
 .flexslider .slides > li { position: relative; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+.flexslider .slides > li { display: none;}
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
@@ -1119,7 +1125,6 @@ call-to-action .button {
    margin: 12px 0;
    color: #EBEEEE;
 	display: inline-block;
-	float: left;
    width: 26%;
 }
 #contact input,
