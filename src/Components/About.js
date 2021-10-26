@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import Fade from "react-reveal";
+import React, { Component } from 'react';
+import Fade from 'react-reveal';
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const name = this.props.data.name;
-    const profilepic = "images/" + this.props.data.image;
-    const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
+    const { name } = this.props.data;
+    const profilepic = `images/${this.props.data.image}`;
+    const { bio } = this.props.data;
+    const { street } = this.props.data.address;
+    const { city } = this.props.data.address;
+    const { state } = this.props.data.address;
+    const { zip } = this.props.data.address;
+    const { phone } = this.props.data;
+    const { email } = this.props.data;
 
     return (
       <section id="about">
@@ -32,7 +32,7 @@ class About extends Component {
               <p>{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
-                  <br></br>
+                  <br />
                   <h2>Contact Details</h2>
                   <p className="address">
                     <span>{name}</span>
@@ -40,7 +40,12 @@ class About extends Component {
                     <span>
                       {street}
                       <br />
-                      {city} {state}, {zip}
+                      {city}
+                      {' '}
+                      {state}
+                      ,
+                      {' '}
+                      {zip}
                     </span>
                     <br />
                     <span>{phone}</span>
@@ -48,8 +53,7 @@ class About extends Component {
                     <span>{email}</span>
                   </p>
                 </div>
-                <div className="columns download">
-                </div>
+                <div className="columns download" />
               </div>
             </div>
           </div>

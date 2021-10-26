@@ -18,6 +18,7 @@ npm start
 ```
 
 ## To deploy as GitHub pages:-
+
 In package.json replace 
 ```
 "homepage": "/"
@@ -31,6 +32,4 @@ then try
 npm run deploy
 ```
 This will create a separate branch on gh-pages.
-**Note:** In GitHub Pages options please choose gh-pages branch otherwise it will not show up on the provided URL
-Wait for a while for it deploy 
-Done!
+**Note:** In GitHub Pages options please choose gh-pages branch otherwise it will not show up on the provided URL. You can automate this process using github workflows. The files for that are present in the .github folder in the repo.

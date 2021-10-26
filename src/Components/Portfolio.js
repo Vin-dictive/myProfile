@@ -13,7 +13,7 @@ class Portfolio extends Component {
       return (
         <div key={id++} className="columns portfolio-item">
           <div className="item-wrap container">
-            <img alt={projects.title} src={projectImage} />
+            <img alt={projects.title} src={projectImage}/>
             <a href={projects.url}> {projects.title}</a>
             <p>{projects.category}</p>
             <p>{projects.description}</p>
@@ -26,7 +26,7 @@ class Portfolio extends Component {
     return (
       <section id="portfolio">
         <HexGridBackground/>
-        <Fade left duration={1000} distance="40px">
+        <Fade distance="40px">
           <div className="pointerEventRemover">
             <h1>Check out some of my Projects</h1>
               <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
