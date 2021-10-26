@@ -20,10 +20,12 @@ jobs:
         - name: Install and build
           run: npm install && npm run build
 
-        - name: Deploy
+        - name: Deploy to gh-pages
           uses: JamesIves/github-pages-deploy-action@4.1.5
           with:
             branch: gh-pages # The branch the action should deploy to.
             folder: build # The folder the action should deploy.
 
+        - name: Build the Docker image and push to Docker hub
+          run: docker build . --file Dockerfile --tag vindictive/profile-page:latest && docker push vindictive/profile-page:latest
 
