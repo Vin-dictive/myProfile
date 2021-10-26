@@ -21,7 +21,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
     - name: Build the Docker image
-      run: docker build . --file dockerfile --tag vindictive/profile-page:$(date +%s)
+      run: docker build . --file dockerfile --tag vindictive/profile-page:latest
 
     - name: Docker Push
       run: docker push vindictive/profile-page
