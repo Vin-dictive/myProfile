@@ -15,7 +15,7 @@ jobs:
     - name: docker login
       env:
         DOCKER_USER: ${{secrets.DOCKER_USER}}
-        DOCKER_PASSWORD: ${{secrets.Docker_PASSWORD}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
 
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file dockerfile --tag vindictive/profile-page:$(date +%s)
 
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/profile-page
+      run: docker push vindictive/profile-page
