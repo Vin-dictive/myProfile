@@ -27,5 +27,5 @@ jobs:
             folder: build # The folder the action should deploy.
 
         - name: Build the Docker image and push to Docker hub
-          run: docker build . --file Dockerfile --tag vindictive/profile-page:latest && docker push vindictive/profile-page:latest
+          run: docker build . --file dockerfile --tag vindictive/profile-page:latest && docker push vindictive/profile-page:latest
 
