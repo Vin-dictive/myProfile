@@ -25,7 +25,3 @@ jobs:
           with:
             branch: gh-pages # The branch the action should deploy to.
             folder: build # The folder the action should deploy.
-
-        - name: Build the Docker image and push to Docker hub
-          run: docker build . --file dockerfile --tag vindictive/profile-page:latest && docker push vindictive/profile-page:latest
-
