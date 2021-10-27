@@ -10,18 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [16]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Install and build
         run: npm ci && npm run build
-        
-  publish-to-docker-hub:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
+
       - name: Docker login
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
@@ -35,13 +38,6 @@ jobs:
 
       - name: Docker Push the image
         run: docker push vindictive/profile-page
-
-  publish-to-gh-pages:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+        
+ 
+      
