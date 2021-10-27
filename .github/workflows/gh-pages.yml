@@ -7,21 +7,47 @@ on:
 
 jobs:
   build:
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [15.x]
 
-      strategy:
-        matrix:
-          node-version: [15.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
 
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v1
+      - name: Install and build
+        run: npm install && npm run build
 
-        - name: Install and build
-          run: npm install && npm run build
+  test:
+    needs: build
+    steps: 
+      - name: ESLint check 
+        run: npm run lint
 
-        - name: Deploy to gh-pages
-          uses: JamesIves/github-pages-deploy-action@4.1.5
-          with:
-            branch: gh-pages # The branch the action should deploy to.
-            folder: build # The folder the action should deploy.
+  publish-docker:
+    needs: test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Docker login
+        env:
+          DOCKER_USER: ${{secrets.DOCKER_USER}}
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+
+        run: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+      - name: Build the Docker image
+        run: docker build . --file dockerfile --tag vindictive/profile-page:latest
+
+      - name: Docker Push the image
+        run: docker push vindictive/profile-page
+
+  publish-gh-pages:
+    needs: test
+    steps:
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
