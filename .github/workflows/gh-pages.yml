@@ -19,7 +19,7 @@ jobs:
       - name: Install and build
         run: npm install && npm run buildW
   publish-docker:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -38,7 +38,7 @@ jobs:
         run: docker push vindictive/profile-page
 
   publish-gh-pages:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to gh-pages
