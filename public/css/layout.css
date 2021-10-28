@@ -1308,7 +1308,7 @@ footer .social-links li:first-child { margin-left: 0; }
    padding: 16px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
-   color: #2B2B2B;
+   color: #ffffff;
 }
 .project-btn:hover{
    background-color: #1abc9c!important;
@@ -1324,7 +1324,7 @@ footer .social-links li:first-child { margin-left: 0; }
    padding: 16px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
-   color: #2B2B2B;
+   color: #ffffff;
 }
 
 .github-btn:hover{
@@ -1361,7 +1361,7 @@ footer .social-links li:first-child { margin-left: 0; }
    padding: 16px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
-   color: #2B2B2B;
+   color: #ffffff;
 }
 .linked-btn:hover{
    background-color: #0072b1 !important;
