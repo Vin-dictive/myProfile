@@ -1,7 +1,7 @@
 
 ## View this page using this link https://vin-dictive.github.io/myProfile/
 
-## In case you are getting localhost:3000 on running npm start:-
+## In case you are getting localhost:3000 not found on running npm start:-
 ### Make the following change:- 
 
 In package.json replace 
