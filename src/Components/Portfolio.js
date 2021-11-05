@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
 import HexGridBackground from './HexGridBackground';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 let id = 0;
 class Portfolio extends Component {
@@ -13,7 +14,7 @@ class Portfolio extends Component {
       return (
         <div key={id++} className="columns portfolio-item">
           <div className="item-wrap container">
-            <img alt={projects.title} src={projectImage}/>
+            <LazyLoadImage alt={projects.title}  height={200} src={projectImage}/>
             <a href={projects.url}> {projects.title}</a>
             <p>{projects.category}</p>
             <p>{projects.description}</p>
@@ -24,6 +25,7 @@ class Portfolio extends Component {
     });
 
     return (
+      
       <section id="portfolio">
         <HexGridBackground/>
         <Fade distance="40px">
