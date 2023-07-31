@@ -24,7 +24,7 @@
     "react-lazy-load-image-component": "^1.5.1",
     "react-loader-spinner": "^4.0.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "three": "^0.132.2",
     "web-vitals": "^1.0.1"
   },
