@@ -15,7 +15,7 @@
     "install": "^0.13.0",
     "jquery": "^3.6.0",
     "nice-color-palettes": "^3.0.0",
-    "npm": "^8.11.0",
+    "npm": "^9.8.1",
     "particles-bg": "^2.5.5",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.0-rc.1",
@@ -24,7 +24,7 @@
     "react-lazy-load-image-component": "^1.5.1",
     "react-loader-spinner": "^4.0.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "three": "^0.137.0",
     "web-vitals": "^1.0.1"
   },
